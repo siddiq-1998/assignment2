@@ -1,0 +1,262 @@
+/* common style or utilities*/
+body {
+    margin: 0;
+}
+
+/*-------header styles-------- 
+----------------------------*/
+.header {
+
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.manu-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+.manu {
+    padding-top: 30px;
+    padding-right: 120px;
+
+}
+
+.manu a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+    text-decoration: none;
+    padding-right:40px ;
+
+}
+
+.manu a:hover {
+    background-color: gray;
+}
+
+.header-brand {
+    text-align: center;
+}
+
+.brand-title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+
+}
+
+.brand-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 30px;
+
+}
+
+.btn-primary {
+    width: 170px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    background: #FF900E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.header-brand img {
+    width: 1150px;
+    height: 500px;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+/* Quick list Section */
+.quick_list_main{
+display: flex;
+margin-top: 100px;
+margin-left: 150px;
+;
+}
+.quick_list_img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    grid-gap: 10px;
+}
+.quick_list_title{
+    width: 50%;
+    margin-top: 130px;
+    margin-left: 60px;
+    margin-right: 150px;
+}
+.quick_list_title1{
+    font-weight: 500;
+font-size: 45px;
+color: #727272;
+}
+.quick_list_title2{
+    color: #131313;
+    font-weight: 700;
+font-size: 45px;
+}
+.quick_list_title3{
+    color: #FF900E;
+       font-weight: 700;
+font-size: 45px;
+}
+.quick_list_description{
+    font-weight: 400;
+font-size: 16px;
+color: #727272;
+}
+
+/* Feature section styles */
+.Feature-container{
+    display: flex;
+    margin-top: 70px;
+}
+.Feature-section{
+    width: 50%;
+    margin-left: 100px;
+}
+.Feature-title{
+font-weight: 700;
+font-size: 45px;
+color: #131313;
+}
+.Feature-description{
+    font-weight: 400;
+font-size: 16px;
+color: #727272;
+}
+.Feature-title1{
+    font-weight: 600;
+font-size: 20px;
+}
+.Feature-background{
+    background-image: url(../images/architect.png);
+    width: 60%;
+    height: 859px;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+    
+}
+.btn-secondary{
+width: 260px;
+margin-top: 780px;
+height: 120px;
+background: #FF900E;
+border-radius: 8px;
+font-weight: 550;
+font-size: 40px;
+color: #FFFFFF;
+text-align: center;
+border: none;
+}
+.btn-sub-secondary{
+text-align: center;
+color: #FFFFFF;
+font-weight: 350;
+font-size: 17px;
+}
+.fact-container-main{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.fact-container-main2{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.fact-container{
+    width: 200px;
+height: 200px;
+box-sizing: border-box;
+border: 1px solid #FF900E;
+border-radius: 8px;
+text-align: center;
+padding-top: 25px;
+}
+.fact-title{
+font-weight: 600;
+font-size: 25px;
+color: #727272;
+}
+.fact-description{
+    color: #727272;
+    font-weight: 600;
+  font-size: 17px;
+ 
+}
+
+
+.Sponspors{
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 100px;
+}
+.sponsors-title{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.Footer{
+     background: rgba(255, 144, 14, 0.1);
+     text-align: center;
+     margin: 50px 100px;
+     padding: 17px;
+     border-radius: 5px;
+}
+
+
+/* responsive small device */
+@media screen and (max-width: 688px) {
+    .manu-wrap{
+        flex-direction: column;  
+        text-align: center;
+    }
+    .manu a{
+        text-align: center;
+        display: block;
+    }
+    .header-brand img{
+        width: 100%;
+        height: 100%;
+    }
+     .quick_list_main{
+        flex-direction: column;
+        
+    }
+    .quick_list_img{
+    grid-template-columns: repeat(1, 1fr);
+ width: 100%;
+ 
+    }
+    .Feature-container{
+ flex-direction: column;  
+    }
+    .Feature-background{
+        width: 100%;
+      
+    }
+    .btn-secondary{
+        margin-top: 600px;
+    }
+   
+       
+        
+}
