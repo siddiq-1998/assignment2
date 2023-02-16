@@ -3,8 +3,8 @@ body {
     margin: 0;
 }
 
-/*-------header styles-------- 
-----------------------------*/
+/*-------header styles start-----
+--------------------------------*/
 .header {
 
     background: rgba(255, 144, 14, 0.1);
@@ -80,8 +80,10 @@ body {
     margin-top: 50px;
 
 }
+/*-------header styles end-------- 
+----------------------------*/
 
-/* Quick list Section */
+/* Quick list Section styles start */
 .quick_list_main{
 display: flex;
 margin-top: 100px;
@@ -120,8 +122,14 @@ font-size: 45px;
 font-size: 16px;
 color: #727272;
 }
+/* Quick list Section styles end--- */
 
-/* Feature section styles */
+/* --Feature section styles start--- */
+.Feature-colunm-container{
+    border-left: 5px solid #FF900E;;
+}
+
+
 .Feature-container{
     display: flex;
     margin-top: 70px;
@@ -170,6 +178,10 @@ color: #FFFFFF;
 font-weight: 350;
 font-size: 17px;
 }
+/* --Feature section styles end--- */
+
+/* ----Some fact section styles start--- */
+
 .fact-container-main{
     margin-top: 150px;
     margin-left: 100px;
@@ -189,6 +201,13 @@ border: 1px solid #FF900E;
 border-radius: 8px;
 text-align: center;
 padding-top: 25px;
+box-shadow: 10px 5px 5px rgb(108, 116, 5);
+  animation-name: inoformation_card;
+  animation-duration: 5s;
+}
+@keyframes inoformation_card {
+  from {background-color: greenyellow;}
+  to {background-color: yellow;}
 }
 .fact-title{
 font-weight: 600;
@@ -201,8 +220,25 @@ color: #727272;
   font-size: 17px;
  
 }
+/* ----Some fact section styles end--- */
+
+/*----------------------------------------------
+------------watch feature Section start----------*/
+#feature {
+    display: flex;
+    align-items: center;
+}
+.feature-right{
+    margin-left:100px;
+}
+.feature-left {
+  padding: 30px;
+}
+/*--------------------------------------------------
+------------watch feature Section styles end-------*/
 
 
+/*--------- sponsor section styles start ----------*/
 .Sponspors{
     display: flex;
     justify-content:space-evenly;
@@ -212,18 +248,28 @@ color: #727272;
     text-align: center;
     margin-bottom: 100px;
 }
+/*--------- sponsor section styles end----------*/
 
 
+/*-----------Footer area styles start------------ */
 .Footer{
      background: rgba(255, 144, 14, 0.1);
      text-align: center;
      margin: 50px 100px;
-     padding: 17px;
+     padding: 10px;
      border-radius: 5px;
 }
+.line {
+    border: 1px solid rgba(196, 196, 196, 0.651);
+}
+/*-----------Footer area styles end----------- */
 
 
-/* responsive small device */
+
+
+
+
+/* -----------responsive small device--------------- */
 @media screen and (max-width: 688px) {
     .manu-wrap{
         flex-direction: column;  
