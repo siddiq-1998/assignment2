@@ -34,12 +34,20 @@ body {
     font-size: 18px;
     color: #424242;
     text-decoration: none;
-    padding-right:40px ;
+    padding-left:30px;
+    padding-right: 30px;
+
+     animation-duration: 5s;
+-webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 
 }
 
 .manu a:hover {
-    background-color: gray;
+    background-color: yellowgreen;
+     cursor: pointer;
 }
 
 .header-brand {
@@ -154,6 +162,7 @@ font-size: 20px;
 }
 .Feature-background{
     background-image: url(../images/architect.png);
+    background-size: cover;
     width: 60%;
     height: 859px;
     background-repeat: no-repeat;
@@ -202,12 +211,17 @@ border-radius: 8px;
 text-align: center;
 padding-top: 25px;
 box-shadow: 10px 5px 5px rgb(108, 116, 5);
-  animation-name: inoformation_card;
   animation-duration: 5s;
+-webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
 }
-@keyframes inoformation_card {
-  from {background-color: greenyellow;}
-  to {background-color: yellow;}
+
+.fact-container:hover{
+    background-color: yellow;
+  cursor: pointer;
 }
 .fact-title{
 font-weight: 600;
@@ -275,9 +289,16 @@ color: #727272;
         flex-direction: column;  
         text-align: center;
     }
+    .logo{
+        padding-left: 0;
+    }
+    .manu{
+        padding-right: 0;
+    }
     .manu a{
         text-align: center;
         display: block;
+       padding: 10px;
     }
     .header-brand img{
         width: 100%;
@@ -285,23 +306,55 @@ color: #727272;
     }
      .quick_list_main{
         flex-direction: column;
-        
+         align-items: baseline;
+
+     margin-left: 0;
     }
     .quick_list_img{
     grid-template-columns: repeat(1, 1fr);
- width: 100%;
- 
     }
     .Feature-container{
- flex-direction: column;  
+    flex-direction: column; 
+
     }
     .Feature-background{
         width: 100%;
+        margin: 0;
       
     }
     .btn-secondary{
         margin-top: 600px;
     }
+    #feature{
+    flex-direction: column;
+
+    }
+    .feature-right{
+        margin-left: 0;
+    }
+    .fact-container-main{
+        margin-left: 30px;
+        
+    }
+    .fact-container-main2{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .Sponspors{
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    }
+    .Sponspors img{
+        padding: 10px;
+    }
+    .Footer{
+        height: 70px;
+        margin: 150px 50px;
+    }
+    
+
    
        
         
